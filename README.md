@@ -52,7 +52,6 @@ IP 10.10.10.10  密码 password
 cd lede
 git pull
 ./scripts/feeds update -a && ./scripts/feeds install -a
-./scripts/diffconfig.sh>diffconfig
 make defconfig
 make -j8 download
 find dl -size -1024c -exec ls -l {} \;
